@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FUDO - SIGN IN</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" 
+      referrerpolicy="no-referrer"
+    />
+    
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="../src/Assets/Logo.png" alt="">
+        </header>
+        <nav>
+            <p class="wel">Welcome back</p>
+            <p class="login">Login to your account</p>
+        </nav>
+        <div class="content">
+            <form id="myForm" action="../index.html">
+                <label>Email</label>&emsp;<span id="error_mail"></span><br>
+                    <input class="form-input" id="email" type="text" placeholder="John.snow@gmail.com">
+                <br>
+                <label>Password</label>&emsp;<span id="error_password"></span><br>
+                <div class="form-control">
+                    <input autocomplete="off" class="form-input password" id="pass" type="password" placeholder="*********"><span id="showpass" onclick="togglePass()"><i class="fa-solid fa-eye-slash"></i></span>
+                </div>
+                <button type="submit" id="login">Login now</button>
+                <button type="submit" id="logingg"><i class="fa-brands fa-google"></i> Or sign-in with google</button>
+                <div class="option">
+                    <a href=""><p class="forgot">Forgot password?</p></a>
+                    <p class="noacc">Don't have an account? <span> <a href="../signup/signup.html">Join free today</a> </span></p>
+                </div> 
+            </form>
+        </div>
+    </div>
+    <script>
+        let check = true;
+        function is_Email(youremail){
+            var emaio = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/
+            if(youremail.match(emaio)){
+                return true;
+            }
+            else{
+                return false;
+            };
+        };
+        const form = document.querySelector('#myForm')
+        const title = document.getElementsByTagName('label');
+        const email = document.querySelector('#email');
+        const errorEmail = document.querySelector('#error_mail');
+        const pass = document.querySelector('#pass');
+        const errorPass = document.querySelector('#error_password');
+        form.onsubmit = function () {
+            check = true;
+            if(email.value == "") {
+                errorEmail.innerHTML = "Chưa nhập Email !";
+                errorEmail.style.color = "red";
+                email.style.border = "1px solid red"
+                title[0].style.color = "red"
+                check = false
+            }
+            else if(!is_Email(email.value)){
+                errorEmail.innerText = "Không đúng định dạng Email";
+                errorEmail.style.color = 'red';
+                email.style.border = "1px solid red"
+                title[0].style.color = "red"
+                check = false;
+            }
+            if(pass.value == "") {
+                errorPass.innerHTML = "Chưa nhập Password !";
+                errorPass.style.color = "red";
+                pass.style.border = "1px solid red"
+                title[1].style.color = "red"
+                check = false
+            }
+            else if(pass.value.length < 6) {
+                errorPass.innerHTML = "Password chưa đủ 6 ký tự !";
+                errorPass.style.color = "red";
+                pass.style.border = "1px solid red"
+                title[1].style.color = "red"
+                check = false
+            }
+            return check;
+        }
+        email.onclick = function () {
+            errorEmail.innerHTML = "";
+            email.style.border = ""
+            title[0].style.color = ""
+        }
+        pass.onclick = function () {
+            errorEmail.innerHTML = "";
+            email.style.border = ""
+            title[0].style.color = ""
+        }
+
+        const passwordIE = document.querySelector('.password');
+        const eyeBtn = document.querySelector('.fa-solid');
+        let isPass = true
+        function togglePass() {
+            if(isPass){
+                passwordIE.setAttribute("type","text");
+                eyeBtn.classList.remove('fa-eye-slash');
+                eyeBtn.classList.add('fa-eye');
+                isPass = false;
+            }
+            else {
+                passwordIE.setAttribute("type","password");
+                eyeBtn.classList.remove('fa-eye');
+                eyeBtn.classList.add('fa-eye-slash');
+                isPass = true;
+            }
+        }
+
+    </script>
+</body>
+</html>

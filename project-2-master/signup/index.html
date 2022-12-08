@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Style -->
+    <link rel="stylesheet" href="css/style.css">
+    <title>Sign up</title>
+    <link
+      rel="icon"
+      type="image/png"
+      href="../Assets/Image/logo tab.png"
+      sizes="16x16"
+    />
+  </head>
+  <body>
+  <div class="content">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 order-md-2">
+          <!-- <img src="images/undraw_file_sync_ot38.svg" alt="Image" class="img-fluid"> -->
+          <ul id="list1">
+            <li>
+              <div id="image1" class="transform"></div>
+              <div class="description">
+                On The Way To Success, There Is No Trace Of Lazy Men !!!
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-6 contents">
+          <div class="row justify-content-center">
+            <div class="col-md-8">
+              <div class="mb-4">
+                <div class="word"></div>
+              </div>
+            <form onsubmit="return validateForm()" action="../successsignup/index.html">
+              <div class="form-group first">
+                <label for="fullname">Full name</label>
+                <input name="fullname" type="text" class="form-control" id="fullname" onclick="remove()">
+                <span class="error" id="error"></span>
+              </div>
+              <div class="form-group last mb-4">
+                <label for="username">User Name</label>
+                <input name="username" type="text" class="form-control" id="username" onclick="remove()">
+                <span class="error" id="error"></span>
+              </div>
+              <div class="form-group last mb-4">
+                <label for="email">Email</label>
+                <input name="email" type="email" class="form-control" id="email" onclick="remove()" >
+                <span class="error" id="error"></span>
+              </div>
+              <div class="form-group last mb-4">
+                <label for="phone">Phone</label>
+                <input  type="Phone" class="form-control" id="phone" onclick="remove()">
+                <span class="error" id="error"></span>
+              </div>
+              <div class="form-group last mb-4">
+                <label for="password">Password</label>
+                <input name="password" type="password" class="form-control" id="password" onclick="remove()">
+                <span class="error" id="error"></span>
+              </div>
+              <div class="form-group last mb-4">
+                <label for="repassword">Confirm password</label>
+                <input name="repass" type="password" class="form-control" id="repassword" onclick="remove()">
+                <span class="error" id="error"></span>
+              </div>
+              <!-- <div class="d-flex mb-5 align-items-center">
+                <label class="control control--checkbox mb-0"><span class="caption">Remember me</span>
+                  <input type="checkbox" checked="checked"/>
+                  <div class="control__indicator"></div>
+                </label>
+                <span class="ml-auto"><a href="#" class="forgot-pass">Forgot Password ?</a></span> 
+              </div> -->
+              <span class="d-block text-left my-4 text-muted">You already have an account!
+                <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -->
+                <a style="color: red;" href="../login/index.html">Login now</a>
+              </span>
+              <input type="submit" value="Sign up" class="btn text-white btn-block btn-primary">
+              </div>
+            </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/check.js"></script>
+  </body>
+</html>

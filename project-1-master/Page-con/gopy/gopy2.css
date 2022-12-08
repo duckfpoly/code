@@ -1,0 +1,10 @@
+.end > a {
+    text-decoration: none;
+    color: #000;
+    font-size: medium;
+}
+.end > a:hover {
+    color: red;
+    font-weight: bold;
+    text-decoration: underline
+}

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment</title>
+    <link rel="stylesheet" href="src/CSS/style.css">
+    <link rel="stylesheet" href="src/CSS/style_res.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+    <div id="overlay"></div>
+    <div class="header">
+        <div class="logo"><img src="src/Assets/Logo.png" alt=""></div>
+        <div class="nav_bar"><ul id="vmenu"></ul></div>
+        <div class="form-login">
+            <ul>
+                <li id="cart"><img src="src/Assets/Cart.png" alt="">
+                    <div id="viewCart">
+                        <p id="spc">Giỏ hàng</p>
+                        <hr>
+                        <div class="viewPrd">
+                            <table id="viewPrd">
+                                <thead>
+                                    <tr>
+                                        <th>ID</th>
+                                        <th>Image</th>
+                                        <th>Name</th>
+                                        <th>Amount</th>
+                                        <th>Cost</th>
+                                        <th>Option</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><span>1</span></td>
+                                        <td><img src="https://cdn.tgdd.vn/Products/Images/42/230529/iphone-13-pro-max-gold-1-600x600.jpg" alt=""></td>
+                                        <td><span>Sản phẩm 1</span></td>
+                                        <td><div class="quantity">
+                                            <input type="number" min="1" step="1" value="1">
+                                          </div></td>
+                                        <td><span>100</span>$</td>
+                                        <td><button id="del">Xoá</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span>1</span></td>
+                                        <td><img src="https://cdn.tgdd.vn/Products/Images/42/230529/iphone-13-pro-max-gold-1-600x600.jpg" alt=""></td>
+                                        <td><span>Sản phẩm 1</span></td>
+                                        <td><div class="quantity">
+                                            <input type="number" min="1" step="1" value="1">
+                                          </div></td>
+                                        <td><span>100</span>$</td>
+                                        <td><button id="del">Xoá</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span>1</span></td>
+                                        <td><img src="https://cdn.tgdd.vn/Products/Images/42/230529/iphone-13-pro-max-gold-1-600x600.jpg" alt=""></td>
+                                        <td><span>Sản phẩm 1</span></td>
+                                        <td><div class="quantity">
+                                            <input type="number" min="1" step="1" value="1">
+                                          </div></td>
+                                        <td><span>100</span>$</td>
+                                        <td><button id="del">Xoá</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span>1</span></td>
+                                        <td><img src="https://cdn.tgdd.vn/Products/Images/42/230529/iphone-13-pro-max-gold-1-600x600.jpg" alt=""></td>
+                                        <td><span>Sản phẩm 1</span></td>
+                                        <td><div class="quantity">
+                                            <input type="number" min="1 " step="1" value="1">
+                                          </div></td>
+                                        <td><span>100</span>$</td>
+                                        <td><button id="del">Xoá</button></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="buyPrd">
+                            <div class="totalcost">
+                                <span>Tổng</span>
+                                <span id="totalcost">1.000.000 VNĐ</span>
+                            </div>
+                            <div class="buy">
+                                <button>Thanh Toán</button>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="sidebar_icon" id="sidebar_icon">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </div>
+    <div class="sidebar_menu">
+        <ul id="logo">
+            <li><img src="src/Assets/Logo.png" alt=""></li>
+        </ul>
+        <ul id="sidebar_menu_list"></ul>
+        <div class="form_sidebar"></div>
+        <div class="closeSideBar" id="closeSideBar"><button>Close</button></div>
+    </div>
+    <div class="main">
+        <div class="banner">
+            <div class="banner_left">
+                <div class="btn">
+                    <button>Quality Food</button>
+                </div>
+                <div class="text_title">
+                    <p>Fastest</p><span>Delivery <span>& </span></span><span>Easy&nbsp;</span><span>Pickup</span>
+                </div>
+                <div class="text_info">
+                    <p>Best cooks and best delivery guys all at your service. Hot tasty food will reach you in 60
+                        minutes.</p>
+                </div>
+                <div class="form_input show-on-scroll zoom">
+                    <input class="form-control" type="text" placeholder="Enter your delivery location">
+                    <button class="form-button">Discover</button>
+                </div>
+            </div>
+            <div class="banner_right">
+                <img src="src/Assets/Images.png">
+            </div>
+        </div>
+        <div class="popular">
+            <p class="title">Our Popular Dishes</p>
+            <p class="title_info">Lorem ipsum dolor sit amet,
+                consectetuipisicing elit, 
+                sed do eiusmod tempor incididunt
+                ut labore et dolore magna aliqut enim ad minim </p>
+        </div>
+        <div class="filter">
+            <select name="" id="filter-select">
+                <option value="" hidden>Lọc giá</option>
+                <option value="all">Tất cả</option>
+                <option value="under30">Dưới 30$</option>
+                <option value="over30">Trên 30$</option>
+            </select>
+        </div>
+        <div class="popular_product"></div>
+        <div class="category">
+            <div class="header_category">
+                <div class="text">
+                    <p>Categories</p>
+                </div>
+                <div class="form_control">
+                    <button class="form-buttonn">View All Categories</button>
+                </div>
+            </div>
+            <div class="list_category"></div>
+        </div>
+        <div class="contact">
+            <div class="text">
+                <p>Contact Us</p>
+            </div>
+            <div class="form_submit">
+                <form onsubmit="return validateForm()">
+                    <div class="name">
+                        <label for="">Name</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span id="error_name"></span><br>
+                        <input class="form_in" type="text" id="name" name="fullname" placeholder="Enter your name..." onclick="removeError()">
+                    </div>
+                    <div class="mail">
+                        <label for="">Email Adress</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span id="error_mail"></span><br>
+                        <input class="form_in" type="text" id="email" name="email" placeholder="Your email address..." onclick="removeError()">
+                    </div>
+                    <div class="subject">
+                        <label for="">Subject</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span id="error_subject"></span><br>
+                        <input class="form_in" type="text" id="subject" name="subject" placeholder="Enter subject..." onclick="removeError()">
+                    </div>
+                    <div class="enqiry">
+                        <label for="">Enquiry type</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span id="error_enqiry"></span><br >
+                        <select class="form_in" name="" id="enqiry" onclick="removeError()">
+                            <option disabled selected value="" class="adver">Advertising</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                        </select>
+                    </div>
+                    <div class="mess">
+                        <label for="">Message</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span id="error_mess"></span><br>
+                        <textarea name="mess" class="mess_input" id="mess" cols="180" rows="10"
+                            placeholder="Enter your messages..." onclick="removeError()"></textarea>
+                    </div>
+                    <button type="submit" class="btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+        <footer>
+            <div class="logo_footer"><img src="src/Assets/Logo.png" alt=""></div>
+            <div class="nav_menu"><ul id="vmenu"></ul></div>
+            <div class="sidebar_icon" id="sidebar_icon2"><i class="fa-solid fa-bars"></i></div>
+        </footer>
+    </div>
+    <script src="src/JS/app.js"></script>
+    <script>
+        showProduct(ListProduct);
+        showCategory();
+    </script>
+</body>
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail Product</title>
+    <link rel="stylesheet" href="../src/CSS/style.css">
+    <link rel="stylesheet" href="../src/CSS/style_res.css">
+    <link rel="stylesheet" href="blog.css">
+    <link rel="stylesheet" 
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" 
+          integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" 
+          crossorigin="anonymous" 
+          referrerpolicy="no-referrer" 
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+    <div id="overlay"></div>
+
+    <div class="container">
+        <div style="margin-bottom: 50px" class="header">
+            <div class="logo">
+                <img src="../src/Assets/Logo.png" alt="">
+            </div>
+            <div class="nav_bar">
+                <ul id="vmenu"></ul></div>
+            <div class="form-login">
+                <ul>
+                    <li id="cart"><img src="../src/Assets/Cart.png" alt="">
+                        <div id="viewCart">
+                            <p id="spc">Giỏ hàng</p>
+                            <hr>
+                            <div class="viewPrd">
+                                <table id="viewPrd">
+                                    <thead>
+                                        <tr>
+                                            <th>ID</th>
+                                            <th>Image</th>
+                                            <th>Name</th>
+                                            <th>Amount</th>
+                                            <th>Cost</th>
+                                            <th>Option</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><span>1</span></td>
+                                            <td><img src="https://cdn.tgdd.vn/Products/Images/42/230529/iphone-13-pro-max-gold-1-600x600.jpg" alt=""></td>
+                                            <td><span>Sản phẩm 1</span></td>
+                                            <td><div class="quantity">
+                                                <input type="number" min="1" step="1" value="1">
+                                              </div></td>
+                                            <td><span>100</span>$</td>
+                                            <td><button id="del">Xoá</button></td>
+                                        </tr>
+                                        <tr>
+                                            <td><span>1</span></td>
+                                            <td><img src="https://cdn.tgdd.vn/Products/Images/42/230529/iphone-13-pro-max-gold-1-600x600.jpg" alt=""></td>
+                                            <td><span>Sản phẩm 1</span></td>
+                                            <td><div class="quantity">
+                                                <input type="number" min="1" step="1" value="1">
+                                              </div></td>
+                                            <td><span>100</span>$</td>
+                                            <td><button id="del">Xoá</button></td>
+                                        </tr>
+                                        <tr>
+                                            <td><span>1</span></td>
+                                            <td><img src="https://cdn.tgdd.vn/Products/Images/42/230529/iphone-13-pro-max-gold-1-600x600.jpg" alt=""></td>
+                                            <td><span>Sản phẩm 1</span></td>
+                                            <td><div class="quantity">
+                                                <input type="number" min="1" step="1" value="1">
+                                              </div></td>
+                                            <td><span>100</span>$</td>
+                                            <td><button id="del">Xoá</button></td>
+                                        </tr>
+                                        <tr>
+                                            <td><span>1</span></td>
+                                            <td><img src="https://cdn.tgdd.vn/Products/Images/42/230529/iphone-13-pro-max-gold-1-600x600.jpg" alt=""></td>
+                                            <td><span>Sản phẩm 1</span></td>
+                                            <td><div class="quantity">
+                                                <input type="number" min="1 " step="1" value="1">
+                                              </div></td>
+                                            <td><span>100</span>$</td>
+                                            <td><button id="del">Xoá</button></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="buyPrd">
+                                <div class="totalcost">
+                                    <span>Tổng</span>
+                                    <span id="totalcost">1.000.000 VNĐ</span>
+                                </div>
+                                <div class="buy">
+                                    <button>Thanh Toán</button>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li><button class="signin">Sign in</button></li>
+                    <li><button class="signup">Sign up</button></li>
+                </ul>
+            </div>
+            <div class="sidebar_icon" id="sidebar_icon">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            
+        </div>
+        <div class="sidebar_menu">
+            <ul id="logo">
+                <li><img src="../src/Assets/Logo.png" alt=""></li>
+            </ul>
+            <ul id="sidebar_menu_list"></ul>
+            <div class="form_sidebar">
+                <button id="signin_sidebar" class="signin">Sign In</button>
+                <button id="signup_sidebar" class="signup">Sign Up</button>
+            </div>
+            <div class="closeSideBar" id="closeSideBar">
+                <button>Close</button>
+            </div>
+        </div>
+        <main class="main">
+           <div class="title">
+            <p>BLOG</p>
+           </div>
+           <div class="content">
+           </div>
+        </main>
+        <footer>
+            <div class="logo_footer">
+                <img src="../src/Assets/Logo.png" alt="">
+            </div>
+            <div class="nav_menu navmenu_detail">
+                <ul id="vmenu"></ul>
+            </div>
+            <div class="sidebar_icon" id="sidebar_icon2">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </footer>
+    </div>
+    <script src="../src/JS/app.js"></script>
+</body>
+</html>

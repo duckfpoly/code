@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FUDO - SIGN UP</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" 
+      referrerpolicy="no-referrer"
+    />
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="../src/Assets/Logo.png" alt="">
+        </header>
+        <nav>
+            <p class="wel">Welcome to Fudo</p>
+            <p class="login">Create Account</p>
+        </nav>
+        <div class="content">
+            <form id="myForm" action="../signin/signin.html">
+                <label>Email</label>&emsp;<span id="error_mail"></span><br>
+                <input class="form-input" id="email" type="text" placeholder="John.snow@gmail.com">
+                <br>
+                <label>Fullname</label>&emsp;<span id="error_fname"></span><br>
+                <input class="form-input" id="fname" type="text" placeholder="John.snow">
+                <br>
+                <label>Password</label>&emsp;<span id="error_password"></span><br>
+                <input class="form-input" id="pass" type="password" placeholder="*********">
+                <br>
+                <label>Re-Password</label>&emsp;<span id="error_repassword"></span><br>
+                <input class="form-input" id="repass" type="password" placeholder="*********">
+                <button type="submit" id="login">Creat now</button>
+            </form>
+        </div>
+    </div>
+    <script>
+        let check = true;
+        function is_Email(youremail){
+            var emaio = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/
+            if(youremail.match(emaio)){
+                return true;
+            }
+            else{
+                return false;
+            };
+        };
+        const form = document.querySelector('#myForm')
+
+        const title = document.getElementsByTagName('label');
+
+        const email = document.querySelector('#email');
+        const errorEmail = document.querySelector('#error_mail');
+
+        const fname = document.querySelector('#fname');
+        const errorFname = document.querySelector('#error_fname');
+
+        const pass = document.querySelector('#pass');
+        const errorPass = document.querySelector('#error_password');
+
+        const repass = document.querySelector('#repass');
+        const errorRepass = document.querySelector('#error_repassword');
+
+        form.onsubmit = function () {
+            check = true;
+            if(email.value == "") {
+                errorEmail.innerHTML = "Chưa nhập Email !";
+                errorEmail.style.color = "red";
+                email.style.border = "1px solid red"
+                title[0].style.color = "red"
+                check = false
+            }
+            else if(!is_Email(email.value)){
+                errorEmail.innerText = "Không đúng định dạng Email";
+                errorEmail.style.color = 'red';
+                email.style.border = "1px solid red"
+                title[0].style.color = "red"
+                check = false;
+            }
+            if(fname.value == "") {
+                errorFname.innerHTML = "Chưa nhập họ và tên !";
+                errorFname.style.color = "red";
+                email.style.border = "1px solid red"
+                title[1].style.color = "red"
+                check = false
+            }
+            if(pass.value == "") {
+                errorPass.innerHTML = "Chưa nhập Password !";
+                errorPass.style.color = "red";
+                pass.style.border = "1px solid red"
+                title[2].style.color = "red"
+                check = false
+            }
+            else if(pass.value.length < 6) {
+                errorPass.innerHTML = "Password chưa đủ 6 ký tự !";
+                errorPass.style.color = "red";
+                pass.style.border = "1px solid red"
+                title[2].style.color = "red"
+                check = false
+            }
+            if(repass.value == "") {
+                errorRepass.innerHTML = "Chưa nhập Re-Password !";
+                errorRepass.style.color = "red";
+                repass.style.border = "1px solid red"
+                title[3].style.color = "red"
+                check = false
+            }
+            else if(repass.value.length < 6) {
+                errorRepass.innerHTML = "Re-Password chưa đủ 6 ký tự !";
+                errorRepass.style.color = "red";
+                repass.style.border = "1px solid red"
+                title[3].style.color = "red"
+                check = false
+            }
+            else if(repass.value != pass.value) {
+                errorRepass.innerHTML = "Không khớp với Password !";
+                errorRepass.style.color = "red";
+                repass.style.border = "1px solid red"
+                title[3].style.color = "red"
+                check = false
+            }
+            return check;
+        }
+        email.onclick = function () {
+            errorEmail.innerHTML = "";
+            email.style.border = ""
+            title[0].style.color = ""
+        }
+        pass.onclick = function () {
+            errorPass.innerHTML = "";
+            pass.style.border = ""
+            title[2].style.color = ""
+        }
+        fname.onclick = function () {
+            errorFname.innerHTML = "";
+            fname.style.border = ""
+            title[1].style.color = ""
+        }
+        repass.onclick = function () {
+            errorRepass.innerHTML = "";
+            repass.style.border = ""
+            title[3].style.color = ""
+        }
+    </script>
+</body>
+</html>
