@@ -1,0 +1,10 @@
+- Download Composer 
+    https://getcomposer.org/download/
+- Phpmailer:
+    + https://myaccount.google.com/security?hl=vi
+    + https://github.com/PHPMailer/PHPMailer
+    + composer require phpmailer/phpmailer
+- Google Client:
+    + https://console.cloud.google.com/?hl=vi
+    + https://github.com/googleapis/google-api-php-client 
+    + composer require google/apiclient:^2.12.1
