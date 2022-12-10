@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="a8051e3c-be4e-4fbb-a357-a20e88ff83a4" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../New folder/.idea/library.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/library.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aos/aos.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aos/aos.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bootstrap/bootstrap4/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bootstrap/bootstrap4/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bootstrap/bootstrap4/js/jquery-3.2.1.slim.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bootstrap/bootstrap4/js/popper.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bootstrap/bootstrap5/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bootstrap/bootstrap5/js/bootstrap.bundle.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bootstrap/bootstrap5/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bootstrap/bootstrap5/js/popper.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fontawesome/4.7/all.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fontawesome/6.0/all.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jquery/axios.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jquery/jquery-ui.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jquery/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/swiper/swiper-bundle.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/swiper/wiper-bundle.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/toast/toast.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/toast/toast.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/validated/validate.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../christmas/project2/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../christmas/project2/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo/test" beforeDir="false" afterPath="$PROJECT_DIR$/../demo/test" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2Ij3ZPQFlJWUVGjWhY2Rrthsa8V" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a8051e3c-be4e-4fbb-a357-a20e88ff83a4" name="Changes" comment="" />
+      <created>1670681219362</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1670681219362</updated>
+      <workItem from="1670681220610" duration="51000" />
+      <workItem from="1670681315909" duration="167000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+</project>
