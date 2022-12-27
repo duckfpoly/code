@@ -1,26 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>API - CUD</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+    <link rel="stylesheet" href="src/CSS/index.css">
+    <link rel="stylesheet" href="src/CSS/animation.css">
 </head>
+
 <body>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.2.0/axios.min.js" integrity="sha512-OdkysyYNjK4CZHgB+dkw9xQp66hZ9TLqmS2vXaBrftfyJeduVhyy1cOfoxiKdi4/bfgpco6REu6Rb+V2oVIRWg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script>
-    var auth = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiTmd1eWVuIER1YyIsInBob25lIjoiMDgyMzU2NTgzMSIsImVtYWlsIjoibmd1eWVuZHVjMTA2MDNAZ21haWwuY29tIiwiYWRtaW4iOnRydWUsImV4cCI6MTY2OTgwNTQ4Nn0.PByr6NO_lYgDSnT-KkW0bLBgsNzfIySHO_IofdxiHsw';
-    axios.get("http://localhost/courses/api/categories", {
-        headers: {
-            Authorization: 'Bearer ' + auth
-        },
-    })
-        .then((res) => {
-            console.log(res.data)
-        })
-        .catch((error) => {
-            console.error(error);
-        });
-    </script>
+    <div id="overlay"></div>
+    <div id="toast"></div>
+<!--    <button class="btn btn-secondary" onclick="demo(this)">Chuyển</button>-->
+
+
+    <div id="app">
+
+    </div>
+
+    <!-- Lib -->
+    <script src="src/JS/lib/axios.min.js"></script>
+    <script src="src/JS/lib/jquery.min.js"></script>
+    <script src="src/JS/lib/popper.min.js"></script>
+    <script src="src/JS/lib/bootstrap.min.js"></script>
+    <!-- JS File -->
+    <script src="src/JS/view.js"></script>
+    <script src="src/JS/main.js"></script>
+    <script src="src/JS/toast.js"></script>
+    <script src="src/JS/route.js"></script>
+
 </body>
+
 </html>
