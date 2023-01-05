@@ -31,9 +31,13 @@ User.prototype.getFullName2 = function () {
   return this.className;
 }
 // Date
-var date = new Date()
+var date    = new Date()
+var year    = date.getFullYear()
+var month   = date.getMonth() + 1
+var day     = date.getDate()
+var hour    = date.getHours()
+var minute  = date.getMinutes()
+var second  = date.getSeconds()
 
-var year = date.getFullYear()
-var month = date.getMonth() + 1
-var day = date.getDate()
-
+var random = Math.floor(Math.random() * 3);
+var bonus = ["10 coins", "20 coins", "30 coins"];
