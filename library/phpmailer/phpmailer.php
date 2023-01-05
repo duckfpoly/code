@@ -6,7 +6,7 @@
     function send_mail($mail,$output,$title){
         $mailer = new PHPMailer(true);
         try {
-            $mailer->SMTPDebug = true;
+            $mailer->SMTPDebug = 0;
             $mailer->isSMTP();
             $mailer->Host       = 'smtp.gmail.com';
             $mailer->SMTPAuth   = true;
