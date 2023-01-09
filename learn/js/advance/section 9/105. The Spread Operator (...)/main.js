@@ -35,7 +35,11 @@ restaurant.orderPasta(ingredients[0], ingredients[1], ingredients[2]);
 restaurant.orderPasta(...ingredients);
 
 // Objects
-const newRestaurant = { foundedIn: 1998, ...restaurant, founder: "Guiseppe" };
+const newRestaurant = { 
+  foundedIn: 1998, 
+  ...restaurant, 
+  founder: "Guiseppe" 
+};
 console.log(newRestaurant);
 
 const restaurantCopy = { ...restaurant };

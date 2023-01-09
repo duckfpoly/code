@@ -14,7 +14,7 @@ i {
   color: #f36e45;
 }
 #app {
-  width: 70%;
+  width: 1024px;
   margin: 0px auto;
 }
 header {
@@ -138,7 +138,6 @@ header .image-logo {
   width: 100%;
   height: 100%;
   border-radius: 10px;
-
 }
 .product .image-product .add-cart {
   position: absolute;
@@ -202,6 +201,7 @@ footer {
   border: 1px solid #f36e45;
   border-radius: 50%;
   margin-right: 10px;
+  transition: 0.5s all;
 }
 .options img {
   width: 20px;
@@ -210,3 +210,18 @@ footer {
 .product:hover .options {
   opacity: 1;
 }
+.product:hover .add-cart {
+  border: 1px solid #ccc;
+}
+.options .view:hover,
+.options .heart:hover,
+.options .share:hover {
+  background-color: #f36e45;
+}
+.options .view:hover i,
+.options .heart:hover i,
+.options .share:hover i {
+  color: #fff;
+}
+
+
